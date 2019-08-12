@@ -1,0 +1,22 @@
+{
+  "name": "state-of-devops",
+  "version": "1.0.0",
+  "description": "State of Devops presentation, a living document",
+  "main": "deck.mdx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "mdx-deck deck.mdx"
+  },
+  "keywords": [
+    "deck",
+    "devops",
+    "document",
+    "state",
+    "presentation"
+  ],
+  "author": "Fab Fazreil Amreen",
+  "license": "ISC",
+  "dependencies": {
+    "mdx-deck": "^3.0.9"
+  }
+}

@@ -1,0 +1,105 @@
+import { Split } from 'mdx-deck'
+import { themes } from 'mdx-deck'
+export const theme = themes.future;
+
+# State-Of-DevOps
+
+A revision of DevOps initiative
+
+---
+
+# Environment
+
+---
+
+## Environments that we have
+
+- DEV       (our control)
+- SIT       (Not our control)
+- UAT       (Not our control)
+- Pre-PROD  (Not our control)
+- PROD      (Never touch this)
+
+---
+
+# Build Process
+
+---
+
+## Basic Build Process
+
+Follow the conventional Maven Build Lifecycle
+
+- clean
+- Download dependencies
+- Compile source
+- Compile test
+- Unit test
+- Package
+- Install
+
+---
+
+## Additional processes in Build Process
+
+- Static Analysis
+- Sonar Scan
+- Deploy to artifactory
+- Deploy to DEV environment
+- Archive artifacts
+
+---
+
+# Build Lifecycle
+
+---
+
+## Build lifecycle
+- Deploy to DEV every hour
+- Deploy to SIT by request
+- Deploy to UAT by request
+- Deploy to Pre-Prod Never
+- Deploy to Pre-Prod Never
+
+---
+
+# Comparison
+
+<Split>
+
+point A
+
+point B
+point C
+
+</Split>
+
+---
+
+# Build Mechanism
+
+---
+
+## Build mechanism involves a few ways to achieve them
+- Using jenkins slave for preprovisioning
+- Using jenkins slave for build
+- Using jenkins slave for deployment
+
+---
+
+### pre provisioning slaves
+- Slaves available
+
+---
+
+### build slaves
+- Slaves available
+
+---
+
+### deployment slaves
+- Slaves available
+
+---
+
+# The End
