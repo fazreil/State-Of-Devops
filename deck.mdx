@@ -16,6 +16,22 @@ A revision of DevOps initiative
 ![](https://www.mindhubit.com/img/carousel/feature-devops.png)
 
 ---
+### We have
+
+- code (GOGS)
+- build (maven, npm)
+- release (artifactory)
+- deploy (ansible script)
+- plan (jira & confluence)
+
+---
+
+### We don't have
+
+- operate (orangmatic)
+- monitor (cockpit, dynatrace)
+- test (eclipse jubula, appium, selenium)
+---
 
 # Environment
 
@@ -44,7 +60,7 @@ Follow the conventional Maven Build Lifecycle
 
 ---
 
-## Additional processes in Build Process
+## Additional processes in Build Process (1/2)
 - Compile source
 - Compile test
 - Unit test
@@ -53,7 +69,7 @@ Follow the conventional Maven Build Lifecycle
 
 ---
 
-
+## Additional processes in Build Process (2/2)
 - Static Analysis
 - Sonar Scan
 - Deploy to artifactory
@@ -64,14 +80,16 @@ Follow the conventional Maven Build Lifecycle
 
 # Build Lifecycle
 
+Build setup/Build mechanism
+
 ---
 
 ## Build lifecycle
 - Deploy to DEV every hour
-- Deploy to SIT by request
-- Deploy to UAT by request
-- Deploy to Pre-Prod Never
-- Deploy to Pre-Prod Never
+- Deploy to SIT <a style="color:#00FF00">by request</a>
+- Deploy to UAT <a style="color:#00FF00">by request</a>
+- Deploy to Pre-Prod <a style="color:#FF0000">Never</a>
+- Deploy to Pre-Prod <a style="color:#FF0000">Never</a>
 
 ---
 
