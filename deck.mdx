@@ -1,6 +1,6 @@
-import { Split } from 'mdx-deck'
-import { themes } from 'mdx-deck'
-import CICD from './nomnoml-src/cicd';
+import { Split } from 'mdx-deck';
+import { themes } from 'mdx-deck';
+import Workflow from './nomnoml-src/workflow';
 export const theme = themes.future;
 
 # State-Of-DevOps
@@ -33,6 +33,9 @@ Follow the conventional Maven Build Lifecycle
 
 - Clean
 - Download dependencies
+
+---
+
 ## Additional processes in Build Process
 - Compile source
 - Compile test
@@ -105,7 +108,14 @@ point C
 
 # workflows
 
-<CICD/>
+<Workflow src="[Jenkins]->[Artifactory]" />
 
 ---
+
+# GIT Workflows
+
+<Workflow src="[Start]->[Finish]" />
+
+---
+
 # The End
