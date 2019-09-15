@@ -16,34 +16,18 @@ A revision of DevOps initiative
 ![](https://www.mindhubit.com/img/carousel/feature-devops.png)
 
 ---
-### We have
-
-- code (GOGS)
-- build (maven, npm)
-- release (artifactory)
-- deploy (ansible script)
-- plan (jira & confluence)
-
----
-
-### We don't have
-
-- operate (orangmatic)
-- monitor (cockpit, dynatrace)
-- test (eclipse jubula, appium, selenium)
----
 
 # Environment
 
 ---
 
-## Environments that we have
+## Environments that we deal with have
 
-- DEV       (our control)
-- SIT       (Not our control)
-- UAT       (Not our control)
-- Pre-PROD  (Not our control)
-- PROD      (Never touch this)
+- DEV
+- SIT
+- UAT
+- Pre-PROD
+- PROD
 
 ---
 
@@ -55,36 +39,25 @@ A revision of DevOps initiative
 
 Follow the conventional Maven Build Lifecycle
 
-- Clean
-- Download dependencies
+
+1. validate
+1. compile
+1. test
+1. package
+1. verify
+1. install
+1. deploy
 
 ---
 
 ## Additional processes
 
-<Split>
-
-<div align="left">
-
-<p align="left">Compile source</p>
-<p align="left">Compile test</p>
-<p align="left">Unit test</p>
-<p align="left">Package</p>
-<p align="left">Install</p>
-
-</div>
-
-<div align="left">
-
-<p align="left">Static Analysis</p>
-<p align="left">Sonar Scan</p>
-<p align="left">Deploy to artifactory</p>
-<p align="left">Deploy to environment</p>
-<p align="left">Archive artifacts</p>
-
-</div>
-
-</Split>
+1. Static Analysis
+1. Sonar Scan
+1. Deploy to artifactory
+1. Deploy to environment
+1. Archive artifacts
+1. Update/Feedback work item
 
 ---
 
@@ -95,6 +68,9 @@ Build setup/Build mechanism
 ---
 
 ## Build lifecycle
+
+Suggested Build Lifecycle:
+
 - Deploy to DEV every hour
 - Deploy to SIT <a style="color:#00FF00">by request</a>
 - Deploy to UAT <a style="color:#00FF00">by request</a>
@@ -128,12 +104,16 @@ point C
 ---
 
 ### pre provisioning slaves
-- Slaves available
+- for configuring/shaping the environment node for the said target deployment
+- less usage in daily task, may act as a spare build slave
+- must have connectivity with artifactory
 
 ---
 
 ### build slaves
-- Slaves available
+- for building maven and npm projects.
+- high usage daily task.
+- must have connectivity with artifactory
 
 ---
 
