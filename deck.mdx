@@ -1,7 +1,9 @@
 import { Split } from 'mdx-deck';
-import { themes } from 'mdx-deck';
 import Workflow from './nomnoml-src/workflow';
-export const theme = themes.future;
+import { themes } from 'mdx-deck';
+import { Image } from 'mdx-deck';
+import be from './images/feature-devops.png';
+export const theme = themes.yellow;
 
 # State-Of-DevOps
 
@@ -9,11 +11,27 @@ A revision of DevOps initiative
 
 ---
 
-# DevOps in a nutshell
+# Team
 
 ---
 
-![](https://www.mindhubit.com/img/carousel/feature-devops.png)
+<Workflow src="[Section Head|Fab]->[DevTestOps]
+[DevTestOps]->[Syazwin (December)]
+[Section Head]->[DevSecOps]
+[DevSecOps]->[Azim]
+[Section Head]->[DevDataOps]
+[DevDataOps]->[Faizal Hamid]
+[Section Head]->[SysOps]
+[SysOps]->[Azmy]
+[SysOps]->[Nareen]
+[SysOps]->[Halimi (late Oct)]
+[Section Head]->[CI/CD Engineer]
+[CI/CD Engineer]->[Najwa]
+[Section Head]->[Release Train Engineering]
+[Release Train Engineering]->[Hamizah]
+[Release Train Engineering]->[Bairavee]
+[Section Head]->[Cloud Adoption]
+[Cloud Adoption]->[Alif Jasin]" />
 
 ---
 
@@ -21,13 +39,29 @@ A revision of DevOps initiative
 
 ---
 
-## Environments that we deal with have
+## Environments that we deal with
 
-- DEV
-- SIT
-- UAT
-- Pre-PROD
-- PROD
+<Workflow src="[Environment]->[Work Directly On]
+[Work Directly On]->[Dev]
+[Work Directly On]->[SIT]
+[Environment]-->[<reference> Introducing]
+[Introducing]-->[<reference> Containerized Environments]
+[Environment]->[Assist PCU on]
+[Assist PCU on]->[UAT]
+[Assist PCU on]->[Pre-Prod]
+[Assist PCU on]->[PROD]"/>
+
+---
+
+## Environments that we deal with
+
+| Environment | | Remark |
+|---|---|---|
+| Dev | :arrow_right: | environment where developers work on their US/Features |
+| SIT | :arrow_right: | environment where the US/Features integrates with other US/Features |
+| UAT | :arrow_right: | environment where the User view for their acceptance |
+| Pre-Prod | :arrow_right: | environment to perform staging and performance tests |
+| PROD | :arrow_right: | Production environment |
 
 ---
 
@@ -39,14 +73,11 @@ A revision of DevOps initiative
 
 Follow the conventional Maven Build Lifecycle
 
-
 1. validate
 1. compile
 1. test
 1. package
 1. verify
-1. install
-1. deploy
 
 ---
 
@@ -64,18 +95,6 @@ Follow the conventional Maven Build Lifecycle
 # Build Lifecycle
 
 Build setup/Build mechanism
-
----
-
-## Build lifecycle
-
-Suggested Build Lifecycle:
-
-- Deploy to DEV every hour
-- Deploy to SIT <a style="color:#00FF00">by request</a>
-- Deploy to UAT <a style="color:#00FF00">by request</a>
-- Deploy to Pre-Prod <a style="color:#FF0000">Never</a>
-- Deploy to Pre-Prod <a style="color:#FF0000">Never</a>
 
 ---
 

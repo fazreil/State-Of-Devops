@@ -9,6 +9,7 @@
     "pdf": "mdx-deck pdf deck.mdx",
     "image": "mdx-deck screenshot deck.mdx",
     "help": "mdx-deck",
+    "starth": "mdx-deck hackathon.mdx",
     "start": "mdx-deck deck.mdx"
   },
   "keywords": [
@@ -21,7 +22,7 @@
   "author": "Fab Fazreil Amreen",
   "license": "ISC",
   "dependencies": {
-    "mdx-deck": "^3.0.9",
+    "mdx-deck": "4.0.0",
     "nomnoml": "^0.6.1"
   }
 }
