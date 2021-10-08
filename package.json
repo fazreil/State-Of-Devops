@@ -9,7 +9,6 @@
     "pdf": "mdx-deck pdf deck.mdx",
     "image": "mdx-deck screenshot deck.mdx",
     "help": "mdx-deck",
-    "starth": "mdx-deck hackathon.mdx",
     "start": "mdx-deck deck.mdx"
   },
   "keywords": [
